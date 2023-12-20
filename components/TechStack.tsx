@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import HtmlIcon from "./icons/html5Icon";
 import CssIcon from "./icons/css3Icon";
 import JsIcon from "./icons/jsIcon";
@@ -14,6 +15,14 @@ import GitHubIcon from "./icons/gitHubIcon";
 import NextJs from "./icons/nextJsIcon";
 
 const TechStack = () => {
+  const [flip, setFlip] = useState(false);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlip((prevFlip) => !prevFlip);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
   const iconData = [
     { icon: <HtmlIcon /> },
     { icon: <CssIcon /> },
@@ -29,7 +38,7 @@ const TechStack = () => {
     { icon: <GitHubIcon /> },
   ];
   return (
-    <div className=" max-w-7xl mx-auto px-8  lg:px-12 py-10 md:py-12 text-gray-400">
+    <div className=" max-w-7xl mx-auto  pt-10 md:pt-12 text-gray-400">
       <div className=" flex w-full flex-col  justify-center items-center ">
         <div className=" flex flex-col gap-y-4 text-center">
           <h2 className=" text-3xl  md:text-5xl  text-gray-300 font-medium">
@@ -42,9 +51,12 @@ const TechStack = () => {
         </div>
         <div className=" grid grid-cols-2  md:grid-cols-3  lg:grid-cols-6 gap-x-4 justify-evenly items-center w-full py-8  md:py-10 gap-y-10">
           {iconData.map((item, index) => (
-            <div key={index} className=" flex justify-center">
+            <span
+              key={index}
+              className={` flex justify-center ${flip && "techRotate"}`}
+            >
               {item.icon}
-            </div>
+            </span>
           ))}
         </div>
       </div>
