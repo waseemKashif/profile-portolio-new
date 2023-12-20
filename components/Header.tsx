@@ -17,10 +17,6 @@ const navigation = [
   { name: "Reports", href: "#", current: false },
 ];
 
-function classNames() {
-  return;
-}
-
 export default function Header() {
   return (
     <>

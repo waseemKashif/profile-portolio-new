@@ -32,10 +32,23 @@ body {
   0% {
     filter: drop-shadow(0 0 5px #ff6f00);
   }
-  /* 50% {
-    filter: drop-shadow(0 0 20px #ff6f00);
-  } */
   100% {
     filter: drop-shadow(0 0 20px #ff6f00);
+  }
+}
+.techRotate {
+  animation: flip 5s forwards infinite;
+  transition: transform 2s ease-in-out;
+  transform-style: preserve-3d;
+}
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
   }
 }
