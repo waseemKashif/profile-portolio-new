@@ -2,8 +2,8 @@ const BootstrapIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="88"
-      height="87"
+      width="115"
+      height="110"
       viewBox="0 0 88 87"
       fill="none"
     >

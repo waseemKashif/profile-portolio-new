@@ -2,8 +2,8 @@ const GitIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="105"
-      height="105"
+      width="115"
+      height="110"
       viewBox="0 0 105 105"
       fill="none"
     >
