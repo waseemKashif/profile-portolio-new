@@ -3,8 +3,8 @@ const VusJs = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 48 48"
-      width="120"
-      height="119"
+      width="115"
+      height="110"
     >
       <polygon
         fill="#81c784"

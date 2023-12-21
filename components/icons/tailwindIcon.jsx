@@ -2,8 +2,8 @@ const TailwindIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="131"
-      height="131"
+      width="115"
+      height="110"
       viewBox="0 0 131 131"
       fill="none"
     >

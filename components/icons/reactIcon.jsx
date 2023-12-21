@@ -2,8 +2,8 @@ const ReactIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="113"
-      height="101"
+      width="115"
+      height="110"
       viewBox="0 0 113 101"
       fill="none"
     >

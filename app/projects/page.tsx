@@ -8,7 +8,7 @@ const Projects = () => {
       title: " Gilgit App",
       description:
         "GilgitApp is a free online marketplace for buying and selling products/items anywhere in Pakistan. including cars, bikes,and many others. I am working as front-end developer, this product is powerd by Uconnect Technologies from Gilgit.",
-      techList: "HTML,React Js,Tailwindcss, TypeScript",
+      techList: "HTML, React Js, Tailwindcss, TypeScript",
       liveLink: "https://gilgit.app/",
       githubLink: "/",
     },
@@ -16,8 +16,8 @@ const Projects = () => {
       image: "/images/letsheGo.png",
       title: "Letshego Nation",
       description:
-        "letshego is a financial service group of compinese, its a proper banking system which provide funds for project and give loans to the people. Operated in Africa. I was working as 3rd party font-end developer, the main profile which I was working is 'Zahid Karim'.",
-      techList: "HTML,React Js, Tailwindcss",
+        "letshego is a financial service group of compinese, its a proper banking system which provide funds for project and give loans to the people. Operated in Africa. I was working as 3rd party font-end developer. It was one of my long term project, I have learned React and Redux with Material UI",
+      techList: "React Js, JavaScript, Redux, Material UI",
       liveLink: "https://www.letsgo.letshego.com",
       githubLink: "/",
     },

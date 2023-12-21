@@ -9,7 +9,7 @@ export default function HeroSection() {
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-800  ring-1 sm:-mr-80 lg:-mr-96"
           aria-hidden="true"
         />
-        <div className="mx-auto max-w-7xl px-6  lg:px-8">
+        <div className="mx-auto max-w-7xl px-6  md:px-8 md:mt-10">
           <div className="mx-auto max-w-2xl flex flex-col-reverse  lg:mx-0 md:grid md:max-w-none md:grid-cols-2 md:gap-x-16 md:gap-y-6  xl:gap-x-8  justify-center items-center">
             <div className=" flex flex-col gap-y-2">
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-white sm:text-6xl lg:col-span-2 xl:col-auto ">

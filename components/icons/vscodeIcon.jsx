@@ -2,8 +2,8 @@ const VscodeIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="112"
-      height="112"
+      width="115"
+      height="110"
       viewBox="0 0 112 112"
       fill="none"
     >
