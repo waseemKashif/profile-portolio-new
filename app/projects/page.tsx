@@ -7,8 +7,8 @@ const Projects = () => {
       image: "/images/gilgitApp.png",
       title: " Gilgit App",
       description:
-        "GilgitApp is a free online marketplace for buying and selling products/items anywhere in Pakistan. You can buy, sell or exchange your multiple products through the app.",
-      techList: "HTML,React Js, Tailwindcss",
+        "GilgitApp is a free online marketplace for buying and selling products/items anywhere in Pakistan. including cars, bikes,and many others. I am working as front-end developer, this product is powerd by Uconnect Technologies from Gilgit.",
+      techList: "HTML,React Js,Tailwindcss, TypeScript",
       liveLink: "https://gilgit.app/",
       githubLink: "/",
     },
@@ -21,10 +21,19 @@ const Projects = () => {
       liveLink: "https://www.letsgo.letshego.com",
       githubLink: "/",
     },
+    {
+      image: "/images/cqed.svg",
+      title: "CQED Cultural Intelligence",
+      description:
+        "Cultural Intelligence (CQ) is the ability to effectively navigate and adapt to different cultural contexts. CQ is a crucial skill for success in today's globalised world. I developed this website for Christina the owner of this project, UK",
+      techList: "Next Js,React Js,Tailwindcss,etc",
+      liveLink: "https://globalcqed.com/",
+      githubLink: "https://github.com/afaq-karim/cqed-website",
+    },
   ];
   return (
-    <Container className=" flex flex-col justify-start items-center text-[#CCCCCC]">
-      <div className=" flex flex-col gap-y-4  md:gap-y-6 pb-8  md:pb-10 text-center">
+    <Container className=" flex flex-col justify-start items-center text-[#CCCCCC] ">
+      <div className=" flex flex-col gap-y-4  md:gap-y-6 pb-8  md:pb-10 text-center mt-12">
         <h1 className=" text-[#CCCCCC] text-4xl leading-normal  md:text-5xl font-bold md:leading-7 ">
           {" "}
           Projects

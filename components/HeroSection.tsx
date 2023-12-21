@@ -4,7 +4,7 @@ import OffersSec from "./OffersSec";
 export default function HeroSection() {
   return (
     <div className="">
-      <div className="relative isolate overflow-hidden bg-gradient-to-b from-[#edd382] pt-8  md:pt-10">
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-[#edd382] pt-14  md:pt-10">
         <div
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-800  ring-1 sm:-mr-80 lg:-mr-96"
           aria-hidden="true"
@@ -23,7 +23,7 @@ export default function HeroSection() {
               <div className=" max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <OffersSec />
                 <p className="text-lg leading-8 text-gray-300">
-                  A Front End Developer
+                  A Senior Front End Developer
                 </p>
               </div>
             </div>

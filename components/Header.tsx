@@ -1,23 +1,34 @@
 "use client";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import DownloadIcon from "./icons/downloadIcon";
 import Image from "next/image";
-
-const user = {
-  name: "Waseem Kashif",
-  email: "waseemkashif7@gmail.com",
-  imageUrl: "/images/meAdvance.png",
-};
-const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Team", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "Calendar", href: "#", current: false },
-  { name: "Reports", href: "#", current: false },
-];
-
 export default function Header() {
+  const pathname = usePathname();
+
+  const user = {
+    name: "Waseem Kashif",
+    email: "waseemkashif7@gmail.com",
+    imageUrl: "/images/meAdvance.png",
+  };
+  const [navigation, setNavigation] = useState([
+    { name: "Home", href: "/", current: false },
+    { name: "Team", href: "/team", current: false },
+    { name: "Projects", href: "/projects", current: false },
+    { name: "Calendar", href: "/calendar", current: false },
+    { name: "Reports", href: "/reports", current: false },
+  ]);
+  useEffect(() => {
+    setNavigation((prevNavigation) =>
+      prevNavigation.map((item) => ({
+        ...item,
+        current: pathname === item.href,
+      }))
+    );
+  }, [pathname]);
   return (
     <>
       <div className="z-50 fixed w-full">
@@ -30,19 +41,18 @@ export default function Header() {
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
                             href={item.href}
                             className={`${
                               item.current
                                 ? "bg-gray-900 text-white"
                                 : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                            } rounded-md px-3 py-2 text-sm font-medium
-                            `}
+                            } rounded-md px-3 py-2 text-sm font-medium`}
                             aria-current={item.current ? "page" : undefined}
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -51,19 +61,27 @@ export default function Header() {
                     <div className="ml-4 flex items-center md:ml-6">
                       <button
                         type="button"
-                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4"
                       >
-                        Resume
+                        <a
+                          href="/assets/resume.pdf"
+                          download="resume.pdf"
+                          className="flex items-center gap-x-1"
+                        >
+                          <DownloadIcon />
+                          Resume
+                        </a>
                       </button>
-
+                      <div className="text-base font-medium text-white">
+                        {user.name}
+                      </div>
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
                           <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="absolute -inset-1.5" />
-                            <span className="sr-only">Open user menu</span>
                             <Image
-                              className="h-8 w-8 rounded-full"
+                              className="h-8 w-8 rounded-full bg-white"
                               src={user.imageUrl}
                               alt="menu"
                               width={500}
@@ -118,7 +136,7 @@ export default function Header() {
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
                       <Image
-                        className="h-10 w-10 rounded-full"
+                        className="h-10 w-10 rounded-full bg-white"
                         src={user.imageUrl}
                         alt="icon"
                         width={500}
@@ -138,8 +156,9 @@ export default function Header() {
                       className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                       <a
-                        href="../public/assets/resume.pdf"
+                        href="/assets/resume.pdf"
                         download="Waseem_Resume.pdf"
+                        className="flex items-center gap-x-1"
                       >
                         <DownloadIcon />
                         Resume
