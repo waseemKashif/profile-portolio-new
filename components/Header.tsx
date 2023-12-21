@@ -8,7 +8,7 @@ import DownloadIcon from "./icons/downloadIcon";
 import Image from "next/image";
 export default function Header() {
   const pathname = usePathname();
-
+  const [downloadStard, setDownloadStart] = useState(false);
   const user = {
     name: "Waseem Kashif",
     email: "waseemkashif7@gmail.com",
@@ -29,6 +29,12 @@ export default function Header() {
       }))
     );
   }, [pathname]);
+  const handleDownload = () => {
+    setDownloadStart(true);
+    setTimeout(() => {
+      setDownloadStart(false);
+    }, 7000);
+  };
   return (
     <div className="z-50 fixed w-full">
       <Disclosure as="nav" className="bg-gray-800">
@@ -66,8 +72,18 @@ export default function Header() {
                         href="/assets/resume.pdf"
                         download="resume.pdf"
                         className="flex items-center gap-x-1"
+                        onClick={handleDownload}
                       >
-                        <DownloadIcon />
+                        {downloadStard ? (
+                          <Image
+                            src="/images/downloadAni.gif"
+                            alt=" download icon"
+                            width={30}
+                            height={30}
+                          />
+                        ) : (
+                          <DownloadIcon />
+                        )}
                         Resume
                       </a>
                     </button>
@@ -126,7 +142,7 @@ export default function Header() {
                 ))}
               </div>
               <div className="border-t border-gray-700 pb-3 pt-4">
-                <div className="flex items-center px-5">
+                <div className="flex items-start px-5">
                   <div className="flex-shrink-0">
                     <Image
                       className="h-10 w-10 rounded-full bg-white"
@@ -150,10 +166,20 @@ export default function Header() {
                   >
                     <a
                       href="/assets/resume.pdf"
-                      download="Waseem_Resume.pdf"
+                      download="resume.pdf"
                       className="flex items-center gap-x-1"
+                      onClick={handleDownload}
                     >
-                      <DownloadIcon />
+                      {downloadStard ? (
+                        <Image
+                          src="/images/downloadAni.gif"
+                          alt=" download icon"
+                          width={30}
+                          height={30}
+                        />
+                      ) : (
+                        <DownloadIcon />
+                      )}
                       Resume
                     </a>
                   </button>
