@@ -3,6 +3,7 @@ import Link from "next/link";
 import FacebookIcon from "./icons/facebookIcon";
 import InstagramIcon from "./icons/instagramIcon";
 import GithubIcon from "./icons/githubFooterIcon";
+import LinkedinIcon from "./icons/linkedinIcon";
 import Container from "./Container";
 const navigation = {
   main: [
@@ -28,6 +29,11 @@ const navigation = {
       href: "/",
       icon: <GithubIcon className="h-6 w-6" />,
     },
+    {
+      name: "Linkedin",
+      href: "/",
+      icon: <LinkedinIcon className="h-5 w-5" />,
+    },
   ],
 };
 
@@ -48,7 +54,7 @@ export default function Example() {
               </div>
             ))}
           </nav>
-          <div className="mt-10 flex justify-center space-x-10">
+          <div className="mt-10 flex justify-center space-x-10 items-center">
             {navigation.social.map((item) => (
               <Link
                 key={item.name}
