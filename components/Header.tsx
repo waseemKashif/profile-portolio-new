@@ -12,13 +12,13 @@ export default function Header() {
   const user = {
     name: "Waseem Kashif",
     email: "waseemkashif7@gmail.com",
-    imageUrl: "/images/meAdvance.png",
+    imageUrl: "/images/waseemPro.png",
   };
   const [navigation, setNavigation] = useState([
     { name: "Home", href: "/", current: false },
     { name: "Team", href: "/team", current: false },
     { name: "Projects", href: "/projects", current: false },
-    { name: "Calendar", href: "/calendar", current: false },
+    { name: "About", href: "/about", current: false },
     { name: "Reports", href: "/reports", current: false },
   ]);
   useEffect(() => {
