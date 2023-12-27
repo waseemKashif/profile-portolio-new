@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import LineBars from "@/components/icons/lineBars";
-import ValuesSection from "@/components/ValuesSection";
+import QualitiesSection from "@/components/QualitiesSection";
 const About = () => {
   return (
     <div className="relative isolate -z-10">
@@ -35,8 +36,10 @@ const About = () => {
             <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div className="relative">
-                  <img
-                    src="/images/meAdvance.png"
+                  <Image
+                    width={1000}
+                    height={700}
+                    src="/images/waseem05.png"
                     alt="waseem"
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -45,16 +48,20 @@ const About = () => {
               </div>
               <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div className="relative">
-                  <img
-                    src="/images/meAdvance.png"
+                  <Image
+                    width={1000}
+                    height={700}
+                    src="/images/waseem06.png"
                     alt="waseem"
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
                   <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div className="relative">
-                  <img
-                    src="/images/meAdvance.png"
+                  <Image
+                    width={1000}
+                    height={700}
+                    src="/images/waseem01.png"
                     alt="waseem"
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -63,16 +70,20 @@ const About = () => {
               </div>
               <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div className="relative">
-                  <img
-                    src="/images/meAdvance.png"
+                  <Image
+                    width={1000}
+                    height={700}
+                    src="/images/waseem02.png"
                     alt="waseem"
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
                   <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div className="relative">
-                  <img
-                    src="/images/meAdvance.png"
+                  <Image
+                    width={1000}
+                    height={700}
+                    src="/images/waseem03.png"
                     alt="waseem"
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -83,7 +94,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <ValuesSection />
+      <QualitiesSection />
     </div>
   );
 };

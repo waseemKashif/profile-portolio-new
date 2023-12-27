@@ -19,7 +19,7 @@ export default function Header() {
     { name: "Team", href: "/team", current: false },
     { name: "Projects", href: "/projects", current: false },
     { name: "About", href: "/about", current: false },
-    { name: "Reports", href: "/reports", current: false },
+    { name: "Gallery", href: "/gallery", current: false },
   ]);
   useEffect(() => {
     setNavigation((prevNavigation) =>
