@@ -7,7 +7,7 @@ import {
   SunIcon,
   UserGroupIcon,
 } from "@heroicons/react/20/solid";
-const ValuesSection = () => {
+const QualitiesSection = () => {
   const values = [
     {
       name: "Be world-class.",
@@ -75,4 +75,4 @@ const ValuesSection = () => {
   );
 };
 
-export default ValuesSection;
+export default QualitiesSection;
