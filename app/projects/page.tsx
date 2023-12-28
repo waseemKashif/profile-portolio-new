@@ -53,6 +53,7 @@ const Projects = () => {
       title: "Todo List Advance",
       description:
         "In 2021, I applied to a company for employment but I was not selected. At that time, I passed 3 of the interviews but the CTO did not recommended. This Todo application was their test task provided me, so I added this here to express my dedication. It is fully functional with local storage integrated.",
+      techList: "React Js,JavaScript,Css",
       liveLink: "https://todolist-orcin-delta.vercel.app/",
       githubLink: "https://github.com/waseemKashif/Todo",
     },
