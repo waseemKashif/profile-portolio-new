@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import LineBars from "@/components/icons/lineBars";
 import QualitiesSection from "@/components/QualitiesSection";
+import FeedBack from "@/components/FeedBack";
 const About = () => {
   return (
     <div className="relative isolate -z-10">
@@ -19,18 +20,20 @@ const About = () => {
         />
       </div>
       <div className="overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-40 lg:px-8 lg:pt-32">
+        <div className="mx-auto max-w-7xl px-6 pb-8  pt-32 sm:pt-40 lg:px-8 lg:pt-32">
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                We&apos;re changing the way people connect.
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
+                Front-End Wizardry by Waseem Kasif - Crafting Interactive Web
+                Experiences
               </h1>
               <p className="relative mt-6 text-lg leading-8 text-gray-300 sm:max-w-md lg:max-w-none">
-                Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
-                cupidatat mollit aute velit. Et labore commodo nulla aliqua
-                proident mollit ullamco exercitation tempor. Sint aliqua anim
-                nulla sunt mollit id pariatur in voluptate cillum. Eu voluptate
-                tempor esse minim amet fugiat veniam occaecat aliqua.
+                Welcome! I&apos;m Waseem Kashif, a dedicated and innovative
+                front-end web developer with over 3 years of hands-on experience
+                in building and optimizing interactive websites. Proficient in a
+                spectrum of technologies including JavaScript, React.js,
+                Next.js, Vue.js, SvelteKit, and TypeScript, I excel in turning
+                design concepts into user-centric digital experiences.
               </p>
             </div>
             <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -95,6 +98,7 @@ const About = () => {
         </div>
       </div>
       <QualitiesSection />
+      <FeedBack />
     </div>
   );
 };
