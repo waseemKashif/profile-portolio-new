@@ -7,7 +7,7 @@ const Projects = () => {
       image: "/images/gilgitApp.png",
       title: " Gilgit App",
       description:
-        "GilgitApp is a free online marketplace for buying and selling products/items anywhere in Pakistan. including cars, bikes,and many others. I am working as front-end developer, this product is powerd by Uconnect Technologies from Gilgit.",
+        "GilgitApp is a free online marketplace for buying and selling products/items anywhere in Pakistan. including cars, bikes, and many others. I am working as a front-end developer, This product is powered by Uconnect Technologies from Gilgit.",
       techList: "HTML, React Js, Tailwindcss, TypeScript",
       liveLink: "https://gilgit.app/",
       githubLink: "/",
@@ -16,16 +16,16 @@ const Projects = () => {
       image: "/images/letsheGo.png",
       title: "let Nation Go",
       description:
-        "let Nation Go is a financial service group of compinese, its a proper banking system which provide funds for project and give loans to the people. Operated in Africa. I was working as 3rd party font-end developer. It was one of my long term project, I have learned React and Redux with Material UI",
+        "let Nation Go is a financial service group of companies, it is a proper banking system that provides funds for projects and gives loans to the people. Operated in Africa. I worked as a 3rd party font-end developer. It was one of my long-term projects, I learned React and Redux with Material UI",
       techList: "React Js, JavaScript, Redux, Material UI",
       liveLink: "https://www.letsgo.letshego.com",
       githubLink: "/",
     },
     {
       image: "/images/cqed.svg",
-      title: "CQED Cultural Intelligence",
+      title: "Cultural Intelligence",
       description:
-        "Cultural Intelligence (CQ) is the ability to effectively navigate and adapt to different cultural contexts. CQ is a crucial skill for success in today's globalised world. I developed this website for Christina the owner of this project, UK",
+        "Cultural Intelligence (CQ) is effectively navigating and adapting to different cultural contexts. CQ is a crucial skill for success in today's globalized world. I developed this website for Christina, the owner of this project, UK.",
       techList: "Next Js,React Js,TypeScript,Tailwindcss,etc",
       liveLink: "https://globalcqed.com/",
       githubLink: "https://github.com/afaq-karim/cqed-website",
@@ -34,7 +34,7 @@ const Projects = () => {
       image: "/images/noonWeb.png",
       title: "Noon Demo Website",
       description:
-        "Noon is a UAE based shopping website where multiple products are available to purchase and you can open your online store as well. it functions just like daraz, I was apointed as a test developer for this an I developed its home page for testing, here is some of its record.",
+        "Noon is a UAE-based shopping website where multiple products are available to purchase and you can also shop at another online store. it functions just like Daraz, I was appointed as a test developer for this and I developed its home page for testing, Here are some of its records.",
       techList: "Next Js,React Js,Tailwindcss",
       liveLink: "https://noon-demo.vercel.app/",
       githubLink: "https://github.com/waseemKashif/NoonWeb",
@@ -43,10 +43,19 @@ const Projects = () => {
       image: "/images/youtubeImg.png",
       title: "Youtube Clone",
       description:
-        "In my initial phases I was practing the code and created a clone of youtube which is fully functional and you can search videos and can watch videos online. it suggest only 10 search related videos.",
-      techList: "JavaScript,React Js,Html,Css",
+        "In my initial phases I practiced the code and created a clone of YouTube which is fully functional and you can search for videos and watch videos online. It suggests only 10 related videos. But in the mean time, I will work on it more to make it look perfect.",
+      techList: "JavaScript,React Js,Semantic Css",
       liveLink: "https://youtube-hooks-ten-zeta.vercel.app/",
       githubLink: "https://github.com/waseemKashif/youtubeApp",
+    },
+    {
+      image: "/images/todo.png",
+      title: "Todo List Advance",
+      description:
+        "In 2021, I applied to a company for employment but I was not selected. At that time, I passed 3 of the interviews but the CTO did not recommended. This Todo application was their test task provided me, so I added this here to express my dedication. It is fully functional with local storage integrated.",
+      techList: "React Js,JavaScript,Css",
+      liveLink: "https://todolist-orcin-delta.vercel.app/",
+      githubLink: "https://github.com/waseemKashif/Todo",
     },
   ];
   return (
@@ -58,7 +67,7 @@ const Projects = () => {
         </h1>
         <p className=" text-xl"> Things I&apos;ve built so far</p>
       </div>
-      <div className=" flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:justify-between lg:gap-x-8 md:gap-x-6 gap-y-8">
+      <div className=" flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:justify-between lg:gap-x-8 md:gap-x-6 gap-y-8 md:gap-y-16">
         {projectsData.map((item, index) => (
           <ProjectCard
             image={item.image}

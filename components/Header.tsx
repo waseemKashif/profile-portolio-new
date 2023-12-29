@@ -7,6 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import DownloadIcon from "./icons/downloadIcon";
 import Image from "next/image";
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const [downloadStard, setDownloadStart] = useState(false);
   const user = {
@@ -35,9 +36,26 @@ export default function Header() {
       setDownloadStart(false);
     }, 7000);
   };
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setIsScrolled(position > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="z-50 fixed w-full">
-      <Disclosure as="nav" className="bg-gray-800">
+      <Disclosure
+        as="nav"
+        className={`${
+          isScrolled ? "bg-gray-800" : "bg-gray-800  md:bg-transparent"
+        } transition-colors `}
+      >
         {({ open }) => (
           <>
             <div className="mx-auto max-w-7xl  pr-6 ">
@@ -66,7 +84,9 @@ export default function Header() {
                   <div className="ml-4 flex items-center md:ml-6">
                     <button
                       type="button"
-                      className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4"
+                      className={`${
+                        isScrolled ? "text-gray-400" : "text-white "
+                      } relative rounded-full  p-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4`}
                     >
                       <a
                         href="/assets/resume.pdf"

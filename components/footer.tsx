@@ -7,31 +7,31 @@ import LinkedinIcon from "./icons/linkedinIcon";
 import Container from "./Container";
 const navigation = {
   main: [
-    { name: "About", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Projects", href: "/projects" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Team", href: "/team" },
   ],
   social: [
     {
       name: "Facebook",
-      href: "/",
+      href: "https://www.facebook.com/wasim.flame/",
       icon: <FacebookIcon className="h-6 w-6" />,
     },
     {
       name: "Instagram",
-      href: "/",
+      href: "https://www.instagram.com/waseem_gilgiti99/",
       icon: <InstagramIcon className="h-6 w-6" />,
     },
 
     {
       name: "GitHub",
-      href: "/",
+      href: "https://github.com/waseemKashif/",
       icon: <GithubIcon className="h-6 w-6" />,
     },
     {
       name: "Linkedin",
-      href: "/",
+      href: "https://www.linkedin.com/in/waseem-kashif/",
       icon: <LinkedinIcon className="h-5 w-5" />,
     },
   ],
@@ -40,7 +40,7 @@ const navigation = {
 export default function Example() {
   return (
     <Container>
-      <footer className="">
+      <footer className=" pt-6  md:pt-12">
         <div className="mx-auto max-w-7xl overflow-hidden px-6  lg:px-8">
           <nav className="-mb-6 grid grid-cols-2  justify-center items-center  sm:flex sm:justify-center sm:space-x-12 w-full  text-center">
             {navigation.main.map((item) => (
