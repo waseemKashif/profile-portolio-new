@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardTypes> = ({
         height={700}
         className=" rounded-t-lg h-[12em]"
       />
-      <div className=" flex flex-col p-3  md:p-4 gap-y-0 h-full justify-between bg-gradient-to-br from-[#001800] to-gray-900  ">
+      <div className=" flex flex-col p-3  md:p-4 gap-y-0 h-full justify-between bg-gradient-to-br from-[#001800] to-gray-900  rounded-b-lg ">
         <div className=" flex flex-col gap-y-4">
           <p className=" font-medium text-2xl  md:text-[28px]">{title}</p>
           <ReadMore text={description} maxLength={280} />

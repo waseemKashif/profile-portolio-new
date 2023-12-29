@@ -3,12 +3,13 @@ import TeamCard from "@/components/TeamCard";
 const Team = () => {
   const people = [
     {
-      name: "Leonard Krasner",
-      role: "Senior Designer",
-      imageUrl: "/images/team01.avif",
-      githubUrl: "/",
-      linkedinUrl: "/",
-      upworkUrl: "https://www.upwork.com/freelancers/~0103b29d00a999eebb",
+      name: "Moin Khan",
+      role: "Senior UX/UI Designer",
+      imageUrl: "/images/moin.png",
+      githubUrl: "/team",
+      linkedinUrl: "/team",
+      upworkUrl:
+        "https://www.upwork.com/freelancers/~0121087c3a96b9fb84?referrer_url_path=%2Fnx%2Fsearch%2Ftalent%2Fdetails%2F~0121087c3a96b9fb84%2Fprofile",
     },
     {
       name: "Waseem Kashif",

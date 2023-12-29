@@ -3,12 +3,14 @@ import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
 const FeedBack = () => {
   const benefits = [
-    "Competitive salaries",
-    "Flexible work hours",
-    "30 days of paid vacation",
-    "Annual team retreats",
-    "Benefits for you and your family",
-    "A great work environment",
+    "Excellent Communication Skills",
+    "Understanding People Nature",
+    "Always believe in Yourself",
+    "Never Give Up",
+    "Family is Everything",
+    "Be positive in every situation",
+    "Find peace",
+    "Learning never ends",
   ];
   return (
     <div className="relative isolate -z-10 mt-32 sm:mt-40">
@@ -22,19 +24,21 @@ const FeedBack = () => {
             alt=""
           />
           <div className="w-full flex-auto">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Kindly Provide Feedback
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl capitalize">
+              Some classic experiences.
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              I have lived in all five provinces of Pakistan, born in Queeta and
+              spent four years in Punjab, then moved to Hunza Gilgit and finally
+              went to Karachi. So on all these journeys I met so many people and
+              learned a lot of things.
             </p>
             <ul
               role="list"
               className="mt-10 grid grid-cols-1 gap-x-8 gap-y-3 text-base leading-7 text-white sm:grid-cols-2"
             >
               {benefits.map((benefit) => (
-                <li key={benefit} className="flex gap-x-3">
+                <li key={benefit} className="flex gap-x-3 capitalize">
                   <CheckCircleIcon
                     className="h-7 w-5 flex-none"
                     aria-hidden="true"
@@ -43,14 +47,6 @@ const FeedBack = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-10 flex">
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-indigo-400"
-              >
-                See our job postings <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
           </div>
         </div>
       </div>

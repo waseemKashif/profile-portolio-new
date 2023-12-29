@@ -27,13 +27,22 @@ const About = () => {
                 Front-End Wizardry by Waseem Kasif - Crafting Interactive Web
                 Experiences
               </h1>
-              <p className="relative mt-6 text-lg leading-8 text-gray-300 sm:max-w-md lg:max-w-none">
-                Welcome! I&apos;m Waseem Kashif, a dedicated and innovative
-                front-end web developer with over 3 years of hands-on experience
-                in building and optimizing interactive websites. Proficient in a
-                spectrum of technologies including JavaScript, React.js,
-                Next.js, Vue.js, SvelteKit, and TypeScript, I excel in turning
-                design concepts into user-centric digital experiences.
+              <p className="relative mt-6 text-lg md:text-xl leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
+                Welcome! I&apos;m{" "}
+                <span className=" font-medium text-indigo-500">
+                  Waseem Kashif{" "}
+                </span>{" "}
+                , a dedicated and innovative front-end web developer with over 3
+                years of hands-on experience in building and optimizing
+                interactive websites. Proficient in a spectrum of technologies
+                including
+                <span className=" text-indigo-500 font-medium">
+                  {" "}
+                  JavaScript, React.js, Next.js, Vue.js, SvelteKit, and
+                  TypeScript,
+                </span>{" "}
+                I excel in turning design concepts into user-centric digital
+                experiences.
               </p>
             </div>
             <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">

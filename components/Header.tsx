@@ -84,7 +84,9 @@ export default function Header() {
                   <div className="ml-4 flex items-center md:ml-6">
                     <button
                       type="button"
-                      className="relative rounded-full  p-1 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4"
+                      className={`${
+                        isScrolled ? "text-gray-400" : "text-white "
+                      } relative rounded-full  p-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4`}
                     >
                       <a
                         href="/assets/resume.pdf"

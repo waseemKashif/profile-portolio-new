@@ -23,7 +23,7 @@ const Projects = () => {
     },
     {
       image: "/images/cqed.svg",
-      title: "CQED Cultural Intelligence",
+      title: "Cultural Intelligence",
       description:
         "Cultural Intelligence (CQ) is effectively navigating and adapting to different cultural contexts. CQ is a crucial skill for success in today's globalized world. I developed this website for Christina, the owner of this project, UK.",
       techList: "Next Js,React Js,TypeScript,Tailwindcss,etc",
@@ -67,7 +67,7 @@ const Projects = () => {
         </h1>
         <p className=" text-xl"> Things I&apos;ve built so far</p>
       </div>
-      <div className=" flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:justify-between lg:gap-x-8 md:gap-x-6 gap-y-8">
+      <div className=" flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 md:justify-between lg:gap-x-8 md:gap-x-6 gap-y-8 md:gap-y-16">
         {projectsData.map((item, index) => (
           <ProjectCard
             image={item.image}

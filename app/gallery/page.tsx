@@ -52,6 +52,13 @@ const Gallery = () => {
       location: "Himalayan Mountains, Hunza",
       date: "25th Aug 2018",
     },
+    {
+      image: "/images/ko.png",
+      discription:
+        "Taekwondo!, I am a green belt in taekwondo after one year of training. I took a predicate in the university-level championship of taekwondo. behind me 'Master Reheat Ali' my tanner who took 3rd position in the Korean Taekwondo championship. He is still giving training in the National Stadium as an Army trainer.",
+      location: "Himalayan Mountains, Hunza",
+      date: "25th Aug 2018",
+    },
   ];
   return (
     <Container>
