@@ -3,10 +3,21 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon, UserIcon } from "@heroicons/react/24/outline";
 import DownloadIcon from "./icons/downloadIcon";
 import Image from "next/image";
+import Model from "./Model";
+import ContactMeSection from "./ContactMeSection";
 export default function Header() {
+  const [isModelOpen, setIsModelOpen] = useState(false);
+
+  const handleOpenModel = () => {
+    setIsModelOpen(true);
+  };
+
+  const handleCloseModel = () => {
+    setIsModelOpen(false);
+  };
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const [downloadStard, setDownloadStart] = useState(false);
@@ -108,8 +119,18 @@ export default function Header() {
                       </a>
                     </button>
                     <div className="text-base font-medium text-white">
-                      {user.name}
+                      <button
+                        onClick={handleOpenModel}
+                        className="px-2.5 py-1.5 bg-green-600 rounded-lg hover:bg-green-500 flex items-center justify-center gap-x-1"
+                      >
+                        <UserIcon className="w-5 h-5" />
+                        Contact
+                      </button>
                     </div>
+                    <Model isOpen={isModelOpen} onClose={handleCloseModel}>
+                      <ContactMeSection />
+                    </Model>
+
                     {/* Profile dropdown */}
                     <Menu as="div" className="relative ml-3">
                       <div>
@@ -160,6 +181,15 @@ export default function Header() {
                     {item.name}
                   </Disclosure.Button>
                 ))}
+                <div className="text-base font-medium text-white">
+                  <button
+                    onClick={handleOpenModel}
+                    className="px-2.5 py-1.5 bg-green-600 rounded-lg hover:bg-green-500 flex items-center justify-center gap-x-1"
+                  >
+                    <UserIcon className="w-5 h-5" />
+                    Contact
+                  </button>
+                </div>
               </div>
               <div className="border-t border-gray-700 pb-3 pt-4">
                 <div className="flex items-start px-5">
@@ -173,13 +203,14 @@ export default function Header() {
                     />
                   </div>
                   <div className="ml-3">
-                    <div className="text-base font-medium text-white">
+                    <div className="text-sm font-medium text-gray-200">
                       {user.name}
                     </div>
                     <div className="text-sm font-medium text-gray-400">
                       {user.email}
                     </div>
                   </div>
+
                   <button
                     type="button"
                     className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -205,6 +236,9 @@ export default function Header() {
                   </button>
                 </div>
               </div>
+              <Model isOpen={isModelOpen} onClose={handleCloseModel}>
+                <ContactMeSection />
+              </Model>
             </Disclosure.Panel>
           </>
         )}
