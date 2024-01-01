@@ -12,37 +12,37 @@ const QualitiesSection = () => {
     {
       name: "Be world-class.",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
+        "consistently delivering exceptional performance, pushing beyond limits and sets a standard admired on a global scale. ",
       icon: RocketLaunchIcon,
     },
     {
       name: "Take responsibility.",
       description:
-        "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
+        "embodies accountability, acknowledging one's actions, and proactively owning the outcomes, fostering trust and integrity by consistently demonstrating reliability and a commitment.",
       icon: HandRaisedIcon,
     },
     {
       name: "Be supportive.",
       description:
-        "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus voluptas blanditiis et.",
+        "entails actively uplifting others, offering unwavering encouragement, and providing a sturdy foundation for growth.",
       icon: UserGroupIcon,
     },
     {
       name: "Always learning.",
       description:
-        "Iure sed ab. Aperiam optio placeat dolor facere. Officiis pariatur eveniet atque et dolor.",
+        "Learning never ends till we die, so I seek to learn whatever deficiencies I have and try to overcome the lackness of knowledge in me.",
       icon: AcademicCapIcon,
     },
     {
-      name: "Share everything you know.",
+      name: "Sharing is caring.",
       description:
-        "Laudantium tempora sint ut consectetur ratione. Ut illum ut rem numquam fuga delectus.",
+        "Being a mentor, I always try to spread the knowledge I carry and learn from others as well. In my opinion, sharing knowledge is the biggest thing a man can do.",
       icon: SparklesIcon,
     },
     {
       name: "Enjoy downtime.",
       description:
-        "Culpa dolorem voluptatem velit autem rerum qui et corrupti. Quibusdam quo placeat.",
+        "A peaceful downtime with a cup of tea can alleviate your pain and offer relief from life's stress. So I enojoy my downtime better.",
       icon: SunIcon,
     },
   ];
@@ -53,8 +53,8 @@ const QualitiesSection = () => {
           Qualities
         </h2>
         <p className="mt-6 text-lg leading-8 text-gray-300">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis.
+          Everybody carries some positive and negative habits or qualities that
+          define their way of living. Some of mine are down below.
         </p>
       </div>
       <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
