@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import LineBars from "@/components/icons/lineBars";
 import QualitiesSection from "@/components/QualitiesSection";
-import FeedBack from "@/components/FeedBack";
+import ClassicExperince from "@/components/ClassicExperince";
 const About = () => {
   return (
     <div className="relative isolate -z-10">
@@ -107,7 +107,7 @@ const About = () => {
         </div>
       </div>
       <QualitiesSection />
-      <FeedBack />
+      <ClassicExperince />
     </div>
   );
 };

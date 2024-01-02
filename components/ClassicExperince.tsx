@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { CheckCircleIcon } from "@heroicons/react/20/solid";
-const FeedBack = () => {
+const ClassicExperince = () => {
   const benefits = [
     "Excellent Communication Skills",
     "Understanding People Nature",
@@ -66,4 +66,4 @@ const FeedBack = () => {
   );
 };
 
-export default FeedBack;
+export default ClassicExperince;
