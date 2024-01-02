@@ -57,6 +57,15 @@ const Projects = () => {
       liveLink: "https://todolist-orcin-delta.vercel.app/",
       githubLink: "https://github.com/waseemKashif/Todo",
     },
+    {
+      image: "/images/arisSecure.png",
+      title: "Aries Secure",
+      description:
+        "I Developed this with Jeff the owner of Aries secure company, This was security provider company and I worked as 3rd party developer and developed it website for the user who subscribe its services. due to busy schedule of the owner I worked only 4 month on this project and the contract was ended.",
+      techList: "SvelteKit,Grpah QL, Tailwind Css",
+      liveLink: "/projects",
+      githubLink: "/projects",
+    },
   ];
   return (
     <Container className=" flex flex-col justify-start items-center text-[#CCCCCC] ">

@@ -7,7 +7,7 @@ const GitHubmini = () => {
       viewBox="0 0 20 20"
       fill="none"
     >
-      <g clip-path="url(#clip0_14_223)">
+      <g clipPath="url(#clip0_14_223)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
