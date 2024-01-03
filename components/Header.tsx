@@ -113,7 +113,9 @@ export default function Header() {
                             height={30}
                           />
                         ) : (
-                          <DownloadIcon />
+                          <DownloadIcon
+                            className={`${downloadStard && "hidden"} w-6 h-6`}
+                          />
                         )}
                         Resume
                       </a>
