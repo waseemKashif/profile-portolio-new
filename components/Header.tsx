@@ -101,22 +101,11 @@ export default function Header() {
                     >
                       <a
                         href="/assets/resume.pdf"
-                        download="resume.pdf"
+                        download="Waseem_Kashif_Resume.pdf"
                         className="flex items-center gap-x-1"
                         onClick={handleDownload}
                       >
-                        {downloadStard ? (
-                          <Image
-                            src="/images/downloadAni.gif"
-                            alt=" download icon"
-                            width={30}
-                            height={30}
-                          />
-                        ) : (
-                          <DownloadIcon
-                            className={`${downloadStard && "hidden"} w-6 h-6`}
-                          />
-                        )}
+                        <DownloadIcon className={` w-6 h-6`} />
                         Resume
                       </a>
                     </button>
@@ -219,7 +208,7 @@ export default function Header() {
                   >
                     <a
                       href="/assets/resume.pdf"
-                      download="resume.pdf"
+                      download="Waseem_Kashif_Resume.pdf"
                       className="flex items-center gap-x-1"
                       onClick={handleDownload}
                     >
@@ -231,7 +220,9 @@ export default function Header() {
                           height={30}
                         />
                       ) : (
-                        <DownloadIcon />
+                        <DownloadIcon
+                          className={`${downloadStard && "hidden"} w-6 h-6`}
+                        />
                       )}
                       Resume
                     </a>
