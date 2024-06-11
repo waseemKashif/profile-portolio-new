@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="col-md-24">
+      <div class="col-md-24">
+        <div class="box_home_prdct dod_box1 dd0">
+          <div class="col-lg-17 col-lg-24 col-md-24 mar_cntr">
+            <div class="col-xl-5 col-lg-8 col-md-5 wid_100">
+              <div class="bx_dod">
+                <div class="overlay_gr">
+                  <div class="block_boxcz">
+                    <div class="wid_lf_50">
+                      <h2>Deal <span class="sp1">of the day</span></h2>
+                      <p class="blinkez">Offer valid for</p>
+                    </div>
+                    <div class="countdown">
+                      <div>Hrs</div>
+                      <div>Min</div>
+                      <div>Sec</div>
+                    </div>
+                    <button class="btn_zz" type="button">
+                      See all products
+                    </button>
+                  </div>
+                  <!-- <img class="im_50" src="{{media url="wysiwyg/2023/home_block/badge.png"}}" alt=""> -->
+                </div>
+              </div>
+            </div>
+            <div class="dummy_prodct">
+              <div class="col-xl-19 col-lg-19 col-md-19 wid_100 mrb_dod">
+                <div class="colbx_20">
+                  <img src="{{media url="wysiwyg/2023/dod/dod1.png"}}" alt="">
+                </div>
+                <div class="colbx_20">
+                  <img src="{{media url="wysiwyg/2023/dod/dod2.png"}}" alt="">
+                </div>
+                <div class="colbx_20">
+                  <img src="{{media url="wysiwyg/2023/dod/dod3.png"}}" alt="">
+                </div>
+                <div class="colbx_20">
+                  <img src="{{media url="wysiwyg/2023/dod/dod4.png"}}" alt="">
+                </div>
+                <!-- 
+        <div class="colbx_20">
+          <img src="{{media url="wysiwyg/2023/dod/dod5.png"}}" alt="" />
+        </div> -->
+              </div>
+            </div>
+            <div class="hide_prodct">
+              <div class="col-xl-19 col-lg-16 col-md-19 wid_100 mrb_dod">
+                {{widget type="Codazon\ProductFilter\Block\Product\ProductsList"
+                display_type="all_products" products_count="25" order_by="name
+                DESC" show="thumb,name,review,price,addtocart" thumb_width="220"
+                thumb_height="220" filter_template="custom"
+                custom_template="home_slider_8pro-2.phtml"
+                conditions_encoded="^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^],`1--1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Product`,`attribute`:`category_ids`,`operator`:`==`,`value`:`36962`^]^]"
+                total_rows="1" total_cols="15" ajax_load="0" show_slider="1"
+                slider_dots="0" slider_nav="0" slider_autoplay="10"
+                slider_autoplay_timeout="5000" slider_margin="20"
+                items_1900="15" items_1600="15" items_1420="15" items_1280="15"
+                items_980="4" items_768="3" items_480="3" items_320="3"
+                items_0="3" disable_lazyimg="0"}}
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 mar_cntr">
+      <a href="electronics/kitchen-appliances/healthy-fryers-steamers.html">
+        <img src="{{media url="wysiwyg/2023/home_block/fryer.jpg"}}">
+      </a>
+    </div> -->
+        </div>
+      </div>
+    </div>
+    <style type="text/css">
+      .dod_box1.dd0 .col-xl-21 {
+        width: 82%;
+      }
+      .dod_box1.dd0 .col-xl-3 {
+        width: 18%;
+      }
+      .dd0 .block_boxcz p {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        float: left;
+        line-height: 16px;
+        margin-bottom: 10px;
+        padding: 6px 4px;
+        color: #000;
+        line-height: 16px;
+        margin-bottom: 0px;
+      }
+      .dd0 .block_boxcz p strong {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+      }
+      .dod_box1.dd0 .overlay_gr {
+        /* background: url(https://media-qatar.ahmarket.com/media/wysiwyg/2023/deal_bg1.jpg); */
+        background-color: #a4bd3d; 
+        background-image: linear-gradient(to right,#c0e723, #e3f7a9 );
+        padding-top: 4%;
+        background-size: 100%;
+      }
+
+      .dd0 .bx_dod .countdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+      }
+      .dd0 .bx_dod .countdown > div {
+        background-color: #fff;
+        width: 29.33%;
+        height: auto;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px;
+        margin: 2%;
+        float: left;
+        border-radius: 4px;
+      }
+      .dd0 .bx_dod div span:last-of-type {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        float: right;
+        font-weight: 800;
+      }
+      .dd0 .bx_dod .number {
+        font-weight: 800;
+        line-height: 14px;
+      }
+      .dod_box1.dd0 .bx_dod .overlay_gr h2 .sp1 {
+        font-weight: 700;
+        font-size: 24px !important;
+      }
+      .dod_box1.dd0 .bx_dod .overlay_gr h2 {
+        text-transform: uppercase !important;
+        font-size: 34px;
+      }
+      /*.dd0 .im_50{background-image:linear-gradient(180deg, #b5d047, #a4bd3d);width: 100%;}*/
+      .dod_box1.dd0 .bx_dod .overlay_gr .block_boxcz {
+        width: 100%;
+      }
+      .cx_box {
+        margin: auto;
+        width: 80%;
+        float: none;
+      }
+      .mar_cntr {
+        /*width:auto;*/
+        margin: auto;
+        float: left;
+      }
+      .dd0 .owl-carousel .owl-stage {
+        width: max-content !important;
+      }
+      .dd0 .owl-carousel.owl-drag .owl-item {
+        width: 200px !important;
+      }
+      .dd0 .old-price .price-wrapper {
+        display: none;
+      }
+      .dd0.box_home_prdct .owl-carousel .owl-stage,
+      .dd0.box_home_prdct .owl-carousel .owl-stage-outer {
+        max-height: max-content !important;
+      }
+
+      @-webkit-keyframes blinker {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+      .blinkez {
+        color: red !important;
+        text-shadow: 1px 1px 4px #ccc !important;
+        font-weight: 600;
+        text-decoration: blink;
+        -webkit-animation-name: blinker;
+        -webkit-animation-duration: 0.6s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-direction: alternate;
+      }
+      .dod_box1.dd0 span.main-image:before {
+        background: #a70000;
+        color: #fff;
+        font-size: 10px;
+        padding: 4px 6px;
+        left: 0;
+        right: 0;
+        align-items: flex-start;
+        position: absolute;
+        z-index: 999;
+        width: 58px;
+      }
+      ul.cdz-product-labels li.label-item {
+        background: #db8282 !important;
+      }
+      .dummy_prodct {
+        display: none;
+      }
+      .hide_prodct {
+        display: block !important;
+      }
+      /*.colbx_20{width: 25%;padding: 0px;margin: auto;float: left;height: auto;}
+    .colbx_20 img{max-width: 100%;margin: auto;float: none;}*/
+      .dod_box1 .bx_dod .overlay_gr img {
+        margin-top: 0px !important;
+      }
+      .btn_zz {
+        border: none;
+        color: #fff;
+        background-color: #000;
+        width: auto;
+        padding: 6px 10px;
+        margin: auto;
+        float: none;
+        margin-top: 10px;
+      }
+      .dod_box1 .bx_dod .overlay_gr {
+        height: 340px;
+      }
+      @media only screen and (max-width: 1500px) {
+        .dd0 .im_50 {
+          background-image: linear-gradient(180deg, #b1cb44, #a4bd3d);
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 1300px) {
+        .dod_box1.dd0 .overlay_gr {
+          padding-top: 18%;
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        .wid_lf_50 {
+          width: 50%;
+          height: auto;
+          margin: auto;
+          float: left;
+        }
+        .dd0 .bx_dod .countdown {
+          width: 50%;
+          height: auto;
+          margin: auto;
+          float: left;
+          text-align: center;
+          padding-top: 24px;
+        }
+        .dod_box1 .bx_dod .overlay_gr {
+          height: auto;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .dod_box1.dd0 .bx_dod .overlay_gr {
+          padding-top: 3%;
+          height: auto !important;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr img.im_50 {
+          display: none;
+        }
+        .dod_box1.dd0 .col-xl-3 {
+          width: 100%;
+        }
+        .dod_box1.dd0 .wid_100 {
+          width: 100% !important;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .colbx_20 {
+          width: 50%;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .dod_box1.dd0 .block_boxcz {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          float: left;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr img.im_50 {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          float: left;
+          top: -100px;
+          position: relative;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr h2 {
+          font-size: 24px !important;
+          padding-top: 0px !important;
+          text-transform: uppercase !important;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr {
+          max-height: 210px;
+          overflow: hidden;
+        }
+        .dd0 .bx_dod .countdown {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          float: left;
+        }
+        .dd0 .bx_dod div span:last-of-type {
+          font-weight: 300;
+        }
+        .dd0 .bx_dod .countdown {
+          width: 68%;
+          float: none;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr {
+          padding-bottom: 10px;
+          padding-top: 0%;
+        }
+        .cdz-menu li.item::marker {
+          display: none !important;
+        }
+        .dd0 .products-grid .owl-carousel.owl-drag .owl-item {
+          width: 160px !important;
+        }
+        .wid_lf_50 {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          float: left;
+        }
+        .dd0 .bx_dod .countdown {
+          width: 100%;
+          height: auto;
+          margin: auto;
+          float: left;
+          text-align: center;
+          padding-top: 10px;
+        }
+        .dd0.box_home_prdct .products.wrapper.grid.products-grid {
+          width: 100%;
+          overflow-x: auto;
+        }
+        .dd0.box_home_prdct .owl-carousel .owl-stage,
+        .dd0.box_home_prdct .owl-carousel .owl-stage-outer {
+          width: max-content;
+        }
+        .bx_dod .overlay_gr button {
+          padding: 8px;
+          font-size: 12px;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr h2 .sp1,
+        .dod_box1.dd0 .bx_dod .overlay_gr h2 {
+          font-size: 16px;
+        }
+        .dod_box1.dd0 .bx_dod .overlay_gr {
+          max-height: max-content;
+        }
+        .dd0 .bx_dod .countdown {
+          width: 50%;
+        }
+        .wid_lf_50 {
+          width: 50%;
+        }
+        .bx_dod {
+          margin-top: 6px;
+        }
+        .dd0.box_home_prdct .products.wrapper.grid.products-grid {
+          width: 100%;
+          overflow-x: visible;
+        }
+      }
+      @media only screen and (max-width: 410px) {
+        .bx_dod .overlay_gr button {
+          padding: 8px;
+          font-size: 12px;
+        }
+      }
+    </style>
+  </body>
+</html>
