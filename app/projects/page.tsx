@@ -31,6 +31,15 @@ const Projects = () => {
       githubLink: "https://github.com/afaq-karim/cqed-website",
     },
     {
+      image: "/images/ahMarketPro.jpg",
+      title: "A&H Market Qatar",
+      description:
+        " the premier online shopping store in Qatar, AHMarket Qatar provides a comprehensive range of products, making it your primery source for everything you need. Whether you're in search of the latest electronics, mobile phones, furniture, carpets, books, stationery, sports and fitness equipment, cosmetics, or groceries, AHMarket Qatar Store has you covered with a vast selection",
+      techList: "Magento 2, HTML5,CSS, javascript",
+      liveLink: "https://www.ahmarket.com/en/",
+      githubLink: "https://github.com/GullsherChaudhary/ahmarket_demo3",
+    },
+    {
       image: "/images/noonWeb.png",
       title: "Noon Demo Website",
       description:
