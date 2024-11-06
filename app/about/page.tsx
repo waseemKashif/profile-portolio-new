@@ -32,7 +32,7 @@ const About = () => {
                 <span className=" font-medium text-indigo-500">
                   Waseem Kashif{" "}
                 </span>{" "}
-                , a dedicated and innovative front-end web developer with over 3
+                , a dedicated and innovative front-end web developer with over 5+
                 years of hands-on experience in building and optimizing
                 interactive websites. Proficient in a spectrum of technologies
                 including
