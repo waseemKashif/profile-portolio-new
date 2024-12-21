@@ -22,8 +22,26 @@ const ContactMeSection = () => {
         .required("Message is Required")
         .min(15, "must be 15 char or more"),
     }),
-    onSubmit: (values) => {
-      console.log(JSON.stringify(values, null, 2));
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        if (response.ok) {
+          alert("Message sent successfully!");
+          resetForm();
+        } else {
+          alert("Failed to send the message. Please try again.");
+        }
+      } catch (error) {
+        console.error("Error sending message:", error);
+        alert("An error occurred. Please try again later.");
+      }
     },
   });
 
