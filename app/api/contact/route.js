@@ -18,7 +18,7 @@ export async function POST(request) {
       from: `"Portfolio Contact" <${email}>`,
       to: process.env.RECEIVER_EMAIL,
       subject: `New message from ${name}`,
-      text: message,
+      text: `Email: ${email}, message: ${message}`,
     });
 
     return new Response(
