@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardTypes> = ({
           <ReadMore text={description} maxLength={280} />
         </div>
         <div className=" flex flex-col gap-y-4">
-          <p className=" line-clamp-2">
+          <p className=" line-clamp-1" title={techList}>
             {" "}
             <span className=" font-medium">Tech Stack: </span>
             {techList}

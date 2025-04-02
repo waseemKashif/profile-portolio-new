@@ -24,7 +24,7 @@ const About = () => {
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
             <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
               <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-                Front-End Wizardry by Waseem Kasif - Crafting Interactive Web
+                Front-End Wizardry by Waseem Kashif - Crafting Interactive Web
                 Experiences
               </h1>
               <p className="relative mt-6 text-lg md:text-xl leading-8 text-gray-200 sm:max-w-md lg:max-w-none">
