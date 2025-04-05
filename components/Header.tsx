@@ -32,6 +32,12 @@ export default function Header() {
     { name: "Projects", href: "/projects", current: false },
     { name: "About", href: "/about", current: false },
     { name: "Gallery", href: "/gallery", current: false },
+    {
+      name: "Resume",
+      href: "/assets/resume.pdf",
+      current: false,
+      target: "_blank",
+    },
   ]);
   useEffect(() => {
     setNavigation((prevNavigation) =>
@@ -84,6 +90,8 @@ export default function Header() {
                               : "text-gray-300 hover:bg-gray-700 hover:text-white"
                           } rounded-md px-3 py-2 text-sm font-medium`}
                           aria-current={item.current ? "page" : undefined}
+                          target={item.target && item.target}
+                          rel="noopener noreferrer"
                         >
                           {item.name}
                         </Link>

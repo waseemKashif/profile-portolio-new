@@ -5,7 +5,6 @@ import CssIcon from "./icons/css3Icon";
 import JsIcon from "./icons/jsIcon";
 import ReactIcon from "./icons/reactIcon";
 import Svelte from "./icons/svelteIcon";
-import BootStrapIcon from "./icons/bootstrapIcon";
 import TailwindIcon from "./icons/tailwindIcon";
 import GitIcon from "./icons/gitIcon";
 import VueJs from "./icons/vuejs";

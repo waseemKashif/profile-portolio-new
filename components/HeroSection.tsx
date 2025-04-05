@@ -1,6 +1,7 @@
 "use client";
 import ProfileImg from "./icons/profileImage";
 import OffersSec from "./OffersSec";
+import Link from "next/link";
 export default function HeroSection() {
   return (
     <div className="">
@@ -25,6 +26,30 @@ export default function HeroSection() {
                 <OffersSec />
                 <p className="text-lg leading-8 text-gray-300">
                   A Senior Front End Developer
+                </p>
+                <p className="text-lg leading-8 text-gray-300">
+                  Contact:{" "}
+                  <Link
+                    href="https://api.whatsapp.com/send/?phone=97430078398&text=Hello Mr Waseem?&app_absent=0"
+                    title="WhatsApp Contact"
+                    target="_blank"
+                    className="text-blue-500 hover:text-blue-700"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    +97430078398
+                  </Link>{" "}
+                  <br></br> Email:{" "}
+                  <Link
+                    href="Mailto:waseemkashif7@gmail.com"
+                    title="Email Contact"
+                    target="_blank"
+                    className="text-blue-500 hover:text-blue-700"
+                    rel="noopener noreferrer"
+                  >
+                    waseemkashif7@gmail.com
+                  </Link>{" "}
+                  <br></br> Location: Qatar
                 </p>
               </div>
             </div>
