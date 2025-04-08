@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/footer";
+import Transition from "@/components/transition";
 const poppins = Poppins({
   weight: ["400", "200", "300", "500", "600", "700", "800"],
   subsets: [],
@@ -21,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className}, antialiased`}>
         <Header />
-        {children}
+        <Transition>{children}</Transition>
         <Footer />
       </body>
     </html>

@@ -8,6 +8,7 @@ import DownloadIcon from "./icons/downloadIcon";
 import Image from "next/image";
 import Model from "./Model";
 import ContactMeSection from "./ContactMeSection";
+import { headerNavigationLinks, user } from "@/lib/constants";
 export default function Header() {
   const [isModelOpen, setIsModelOpen] = useState(false);
 
@@ -21,24 +22,8 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
   const [downloadStard, setDownloadStart] = useState(false);
-  const user = {
-    name: "Waseem Kashif",
-    email: "waseemkashif7@gmail.com",
-    imageUrl: "/images/waseemPro.png",
-  };
-  const [navigation, setNavigation] = useState([
-    { name: "Home", href: "/", current: false },
-    { name: "Team", href: "/team", current: false },
-    { name: "Projects", href: "/projects", current: false },
-    { name: "About", href: "/about", current: false },
-    { name: "Gallery", href: "/gallery", current: false },
-    {
-      name: "Resume",
-      href: "/assets/waseemKashif_resume.pdf",
-      current: false,
-      target: "_blank",
-    },
-  ]);
+
+  const [navigation, setNavigation] = useState(headerNavigationLinks);
   useEffect(() => {
     setNavigation((prevNavigation) =>
       prevNavigation.map((item) => ({
