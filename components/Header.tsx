@@ -34,7 +34,7 @@ export default function Header() {
     { name: "Gallery", href: "/gallery", current: false },
     {
       name: "Resume",
-      href: "/assets/resume.pdf",
+      href: "/assets/waseemKashif_resume.pdf",
       current: false,
       target: "_blank",
     },
@@ -108,7 +108,7 @@ export default function Header() {
                       } relative rounded-full  p-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4`}
                     >
                       <a
-                        href="/assets/resume.pdf"
+                        href="/assets/waseemKashif_resume.pdf"
                         download="Waseem_Kashif_Resume.pdf"
                         className="flex items-center gap-x-1"
                         onClick={handleDownload}
@@ -215,7 +215,7 @@ export default function Header() {
                     className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <a
-                      href="/assets/resume.pdf"
+                      href="/assets/waseemKashif_resume.pdf"
                       download="Waseem_Kashif_Resume.pdf"
                       className="flex items-center gap-x-1"
                       onClick={handleDownload}
