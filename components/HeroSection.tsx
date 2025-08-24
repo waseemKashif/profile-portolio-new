@@ -25,7 +25,7 @@ export default function HeroSection() {
               <div className=" max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <OffersSec />
                 <p className="text-lg leading-8 text-gray-300">
-                  A Senior Front End Developer
+                  A Senior Full-Stack Web Developer
                 </p>
                 <p className="text-lg leading-8 text-gray-300">
                   Contact:{" "}
