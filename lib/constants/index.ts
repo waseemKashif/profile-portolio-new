@@ -10,8 +10,8 @@ export const headerNavigationLinks = [
   { name: "About", href: "/about", current: false },
   { name: "Gallery", href: "/gallery", current: false },
   {
-    name: "Resume",
-    href: "/assets/waseemKashif_resume.pdf",
+    name: "View Resume",
+    href: "/assets/WASEEM_KASHIF_-_Full_Stack_Developer.pdf.pdf",
     current: false,
     target: "_blank",
   },
