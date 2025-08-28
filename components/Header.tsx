@@ -93,8 +93,8 @@ export default function Header() {
                       } relative rounded-full  p-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 md:pr-4`}
                     >
                       <a
-                        href="/assets/WASEEM_KASHIF_-_Full_Stack_Developer.pdf"
-                        download="WASEEM_KASHIF_-_Full_Stack_Developer.pdf"
+                        href="/assets/WASEEM_KASHIF_Developer.pdf"
+                        download="WASEEM_KASHIF_Developer.pdf"
                         className="flex items-center gap-x-1"
                         onClick={handleDownload}
                       >
@@ -191,7 +191,7 @@ export default function Header() {
                       {user.name}
                     </div>
                     <div className="text-sm font-medium text-gray-400">
-                      {user.email}
+                      📩{user.email} 
                     </div>
                   </div>
 
@@ -200,8 +200,8 @@ export default function Header() {
                     className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                   >
                     <a
-                      href="/assets/WASEEM_KASHIF_-_Full_Stack_Developer.pdf"
-                      download="WASEEM_KASHIF_-_Full_Stack_Developer.pdf"
+                      href="/assets/WASEEM_KASHIF_Developer.pdf"
+                      download="WASEEM_KASHIF_Developer.pdf"
                       className="flex items-center gap-x-1"
                       onClick={handleDownload}
                     >

@@ -7,11 +7,13 @@ import ReactIcon from "./icons/reactIcon";
 import Svelte from "./icons/svelteIcon";
 import TailwindIcon from "./icons/tailwindIcon";
 import GitIcon from "./icons/gitIcon";
+import NodeJsIcon from "./icons/NodeJsIcon";
 import VueJs from "./icons/vuejs";
 import MaterialUI from "./icons/materialUI_icon";
 import GitHubIcon from "./icons/gitHubIcon";
 import NextJs from "./icons/nextJsIcon";
 import Magento from './icons/magento';
+import ExpressJsIcon from './icons/expressJsIcon'
 
 const TechStack = () => {
   const [flip, setFlip] = useState(false);
@@ -34,7 +36,9 @@ const TechStack = () => {
     { icon: <TailwindIcon />, title: "Tailwind CSS" },
     { icon: <GitIcon />, title: "Git" },
     { icon: <MaterialUI />, title: "Material UI" },
-    { icon: <GitHubIcon />, title: "GitHub" }
+    { icon: <GitHubIcon />, title: "GitHub" },
+    { icon: <NodeJsIcon />, title: "Node Js" },
+    { icon: <ExpressJsIcon />, title: "Express Js" }
   ];
   return (
     <div className=" max-w-7xl mx-auto  pt-10 md:pt-12 text-gray-400">

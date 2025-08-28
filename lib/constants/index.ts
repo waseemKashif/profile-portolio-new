@@ -11,7 +11,7 @@ export const headerNavigationLinks = [
   { name: "Gallery", href: "/gallery", current: false },
   {
     name: "View Resume",
-    href: "/assets/WASEEM_KASHIF_-_Full_Stack_Developer.pdf",
+    href: "/assets/WASEEM_KASHIF_Developer.pdf",
     current: false,
     target: "_blank",
   },
