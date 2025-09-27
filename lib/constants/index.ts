@@ -97,14 +97,23 @@ export const projectsData = [
   },
   {
     image: "/images/ecommerce-website.jpg",
-    title: "Ecommerce Website",
+    title: "Ecommerce Website ",
     description:
-      "I developed this website for my own practice, used latest technologies. It is a fully functional e-commerce website where you can add products to the cart and remove them as well. create an account and login to your account. I used Prisma and MongoDB for backend with PostgreSQL.",
-    techList:
-      "React Js, Next Js, Shadcn, Tailwind CSS, Prisma, MongoDB, Next Auth",
-    liveLink: "https://blackhite-store.vercel.app/",
-    githubLink: "https://github.com/waseemKashif/blackhite_store",
+      "This is the initial development of the Ansar Gallery website. I am transitioning it from a pure Magento theme UI to Next.js. Currently, it's built on basic foundations, using Magento as the backend and Next.js as the frontend, along with some other useful libraries.",
+    techList: "Next Js, Magento BE, Shadcn, Tailwind CSS, Next Auth",
+    liveLink: "https://ansar-gallery-latest-0-0-1.vercel.app/",
+    githubLink: "https://github.com/waseemKashif/ansar-gallery-latest-0.0.1",
   },
+  // {
+  //   image: "/images/ecommerce-website.jpg",
+  //   title: "Ecommerce Website ",
+  //   description:
+  //     "I developed this website for my own practice, used latest technologies. It is a fully functional e-commerce website where you can add products to the cart and remove them as well. create an account and login to your account. I used Prisma and MongoDB for backend with PostgreSQL.",
+  //   techList:
+  //     "React Js, Next Js, Shadcn, Tailwind CSS, Prisma, MongoDB, Next Auth",
+  //   liveLink: "https://blackhite-store.vercel.app/",
+  //   githubLink: "https://github.com/waseemKashif/blackhite_store",
+  // },
 ];
 export const mainNavigationLinks: linkTypes[] = [
   { name: "About", href: "/about" },
